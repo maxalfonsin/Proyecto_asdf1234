@@ -1,3 +1,15 @@
+
+/**  Estilo del header   **/
+
+.filtrobosquejo {
+margin-left: 2500px;
+padding-left: 2000px;
+margin-top: 1000px
+}
+
+/**  Estilo del main-menú   **/
+
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 }
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
@@ -13,7 +25,6 @@ text-align: center;
 vertical-align: middle;
 font-size:20px;
 }
-
 
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
