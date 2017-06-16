@@ -6,7 +6,7 @@
 
 /**  Estilo del header   **/
 
-.filters-style {
+p.filters-style {
 				text-align: center;
 				border-bottom: 1px solid grey;
 				margin-top: 0px;
@@ -40,6 +40,7 @@
 	height:100%;
 	left:0;
 	width:3%;
+	min-width: 60px;
 	overflow:hidden;
 	-webkit-transition:width .05s linear;
 	transition:width .05s linear;
@@ -135,22 +136,24 @@ background-color:#5fa2db;
 /**  Estilo del profile   **/
 
 
-.user-profile {
+div.user-profile {
 					border-bottom: 1px solid grey;
 					margin-left: 4%;
 					width: 96%;
-					height: 100%;			
+					height: 100%;
+					content: center;
+					text-align: center;			
 					}
-	.user-profile .user-info {
+	div.user-profile div.user-info {
 					display:inline-block;
 					border-top: 1px solid grey;
 					border-right: 1px solid grey;
 					border-bottom: 1px solid grey;
 					border-left: 1px solid grey;
-					width: 49%;
+					width: 25%;
 					height: 100%;
 					}		
-		.user-profile .user-info .user-photo {
+		div.user-profile div.user-info .user-photo {
 					display:inline-block;
 					border-top: 1px solid grey;
 					border-right: 1px solid grey;
@@ -159,7 +162,7 @@ background-color:#5fa2db;
 					width: 100%;
 					height: 100%;
 					}
-		.user-profile .user-info .user-proyects {
+		div.user-profile div.user-info .user-proyects {
 					display:inline-block;
 					border-top: 1px solid grey;
 					border-right: 1px solid grey;
@@ -168,13 +171,13 @@ background-color:#5fa2db;
 					width: 100%;
 					height: 100%
 					}
-	.user-profile .user-stamps {
+	div.user-profile div.user-stamps {
 					display:inline-block;
 					border-top: 1px solid grey;
 					border-right: 1px solid grey;
 					border-bottom: 1px solid grey;
 					border-left: 1px solid grey;
-					width:49%;
+					width:73%;
 					height: 100%;
 							}
 		div.user-profile div.user-stamps div.user-objetives {
@@ -187,7 +190,7 @@ background-color:#5fa2db;
 					height: 100%;
 					background-color: blue;
 					}					
-		.user-profile .user-stamps .user-winstamps {
+		div.user-profile .user-stamps div.user-winstamps {
 					display:inline-block;
 					border-top: 1px solid grey;
 					border-right: 1px solid grey;
@@ -197,17 +200,46 @@ background-color:#5fa2db;
 					height: 100%;
 					}							
 
+/**  Estilo de avatar   **/
 
-/**  Estilo del footer   **/
 
 
-.footer-style {
-				height: auto;
-				border-top: 1px ridge grey;
-				border-bottom: 1px solid grey;
-				justify-content: center;
-				background:#fbfbfb;
-				}
+.avatar{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.avatar-main {
+			  position: center;
+			  background: rgba(222,222,222,1);
+			  border-radius: 60%;
+			  padding: 0rem;
+			  height: 100%;
+			  width: 100%;
+			  transition: all 1s ease;
+  			}	
+
+.img-avatar {
+			    display: block;
+			    cursor: pointer;
+			    border-radius: 50%;
+			    height: 100%;
+			    width: 100%;
+			    border: .25rem solid grey;
+			    transition: all 2s ease-in;
+			    &:hover {
+			      border: .25rem solid grey;
+			      transition: all .8s ease-out;    
+			  	}
+
+p .avatar-text {
+			 text-align: center;
+			 }	
 
 
 /**  Estilo fuentes   **/
@@ -244,6 +276,26 @@ background-color:#5fa2db;
 	content: "\e869";
 	color:black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
