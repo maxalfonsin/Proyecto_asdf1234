@@ -298,6 +298,7 @@ html , body{
     margin-bottom: 10px;
     float: left
 }
+
 .main_menu span.fa {
     float: right;
     text-align: center;
@@ -1499,7 +1500,7 @@ ul.msg_list li a .time {
 }
 ul.msg_list li a .message {
     display: block !important;
-    font-size: 11px
+    font-size: 13px
 }
 .dropdown-menu.msg_list span {
     white-space: normal
