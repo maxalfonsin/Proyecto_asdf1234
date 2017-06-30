@@ -327,28 +327,28 @@
                       <br />
 
                       <!-- start skills -->
-                      <h4>Goals progress</h4>
+                      <h4>OKRs progress</h4>
                       <ul class="list-unstyled user_data">
                         <li>
-                          <p>Goal #1 / GoalName</p>
+                          <p>KR #1 / Resolve 90% of weekly incidents </p>
                           <div class="progress progress_sm">
                             <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
                           </div>
                         </li>
                         <li>
-                          <p>Goal #2 / GoalName</p>
+                          <p>KR #2 / Resolve 100% of severe weekly incidents</p>
                           <div class="progress progress_sm">
                             <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
                           </div>
                         </li>
                         <li>
-                          <p>Goal #3 / GoalName</p>
+                          <p>KR #3 / Keep the closing average in 24hrs</p>
                           <div class="progress progress_sm">
                             <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
                           </div>
                         </li>
                         <li>
-                          <p>Goal #4 / GoalName</p>
+                          <p>KR #4 / No more than one closing cycle</p>
                           <div class="progress progress_sm">
                             <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
                           </div>
@@ -361,24 +361,55 @@
 
                       <div class="profile_title">
                         <div class="col-md-6">
-                          <h2>User Activity Report</h2>
+                          <h2>Summary of metrics</h2>
                         </div>
                         <div class="col-md-6">
-                          <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
-                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                            <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                          </div>
                         </div>
                       </div>
                       <!-- start of user-activity-graph -->
-                      <div id="graph_bar" style="width:100%; height:280px;"></div>
+                      <div class="">
+            <div class="row top_tiles">
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-check"></i></div>
+                  <div class="count">112</div>
+                  <h3>Issues resolved</h3>
+                  <p>Issues resolved in production.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-exchange"></i></div>
+                  <div class="count">0.6</div>
+                  <h3>Incident cycles</h3>
+                  <p>Average number of incident cycles.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-clock-o"></i></div>
+                  <div class="count">06:00 </div>
+                  <h3>Resolution time</h3>
+                  <p>From assignment to resolution.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-bug"></i></div>
+                  <div class="count">19</div>
+                  <h3>Pending resolution</h3>
+                  <p>Unresolved assigned incidents.</p>
+                </div>
+              </div>
+            </div>
+
                       <!-- end of user-activity-graph -->
 
                       <div class="" role="tabpanel" data-example-id="togglable-tabs">
                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                          <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">My stamps</a>
+                          <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">My victories</a>
                           </li>
-                          <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects Worked on</a>
+                          <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects worked on</a>
                           </li>
                           <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
                           </li>
@@ -412,14 +443,14 @@
                                   <th>Project Name</th>
                                   <th>Team</th>
                                   <th class="hidden-phone"># incidents resolved</th>
-                                  <th>Contribution</th>
+                                  <th>Resolution</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
                                   <td>1</td>
-                                  <td>New Company Takeover Review</td>
-                                  <td>Deveint Inc</td>
+                                  <td>Consolidación financiera</td>
+                                  <td>SAP BPC</td>
                                   <td class="hidden-phone">18</td>
                                   <td class="vertical-align-mid">
                                     <div class="progress">
@@ -429,8 +460,8 @@
                                 </tr>
                                 <tr>
                                   <td>2</td>
-                                  <td>New Partner Contracts Consultanci</td>
-                                  <td>Deveint Inc</td>
+                                  <td>Consolidación financiera</td>
+                                  <td>Bus de integración</td>
                                   <td class="hidden-phone">13</td>
                                   <td class="vertical-align-mid">
                                     <div class="progress">
@@ -440,8 +471,8 @@
                                 </tr>
                                 <tr>
                                   <td>3</td>
-                                  <td>Partners and Inverstors report</td>
-                                  <td>Deveint Inc</td>
+                                  <td>Consolidación financiera</td>
+                                  <td>Inteligencia de negocios</td>
                                   <td class="hidden-phone">30</td>
                                   <td class="vertical-align-mid">
                                     <div class="progress">
@@ -451,8 +482,8 @@
                                 </tr>
                                 <tr>
                                   <td>4</td>
-                                  <td>New Company Takeover Review</td>
-                                  <td>Deveint Inc</td>
+                                  <td>Consolidación financiera</td>
+                                  <td>Calidad del software</td>
                                   <td class="hidden-phone">28</td>
                                   <td class="vertical-align-mid">
                                     <div class="progress">
@@ -481,12 +512,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
+       
         <!-- /footer content -->
       </div>
     </div>

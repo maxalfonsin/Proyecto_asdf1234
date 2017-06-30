@@ -695,14 +695,14 @@ if (typeof NProgress != 'undefined') {
 				tooltipFillColor: "rgba(51, 51, 51, 0.55)",
 				data: {
 					labels: [
-						"Symbian",
-						"Blackberry",
-						"Other",
-						"Android",
-						"IOS"
+						"Highest",
+						"High",
+						"Medium",
+						"Low",
+						"Lowest"
 					],
 					datasets: [{
-						data: [15, 20, 30, 10, 30],
+						data: [8, 20, 30, 40, 2],
 						backgroundColor: [
 							"#BDC3C7",
 							"#9B59B6",
