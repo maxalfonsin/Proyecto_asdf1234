@@ -702,7 +702,7 @@ if (typeof NProgress != 'undefined') {
 						"Lowest"
 					],
 					datasets: [{
-						data: [8, 20, 30, 40, 2],
+						data: [10, 10, 60, 10, 10],
 						backgroundColor: [
 							"#BDC3C7",
 							"#9B59B6",
