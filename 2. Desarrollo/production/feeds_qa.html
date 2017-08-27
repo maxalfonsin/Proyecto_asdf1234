@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -8,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Buggreen | News Feeds QA </title>
+    <title>Buggreen | Platform performance </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +17,13 @@
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  
     <!-- bootstrap-progressbar -->
     <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- PNotify -->
-    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
-    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
-    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -53,9 +53,8 @@
             <!-- /menu profile quick info -->
 
             <br />
-
             <!-- sidebar menu -->
-             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
@@ -120,7 +119,7 @@
                   </li>
               </div>
             </div>
-            <!-- /sidebar menu -->
+             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
@@ -142,7 +141,7 @@
         </div>
 
         <!-- top navigation -->
-        <div class="top_nav">
+             <div class="top_nav">
           <div class="nav_menu">
             <nav>
               <div class="nav toggle">
@@ -239,327 +238,8 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>News feeds QA</h3>
-              </div>
-
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-6">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Users<small>Victories</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <ul class="list-unstyled msg_list">
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-01.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Santi Respane</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly dev bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-07.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Maximiliano Alfonsín</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly qa bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-13.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Santi Respane</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly dev bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-19.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Maximiliano Alfonsín</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly qa bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-25.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Santi Respane</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly dev bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-31.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Maximiliano Alfonsín</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly qa bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-07.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Maximiliano Alfonsín</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly qa bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-31.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>Santi Respane</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly dev bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-md-6">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Teams<small>Victories</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <ul class="list-unstyled msg_list">
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-07.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>SAP BPC</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-25.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>BUS</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                         New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-13.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>IN</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-07.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>SAP BPC</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-01.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>SAP BPC</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-13.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>SAP BPC</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-01.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>IN</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                          <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image">
-                          <img src="images/victorias-19.png" alt="img" />
-                        </span>
-                        <span>
-                          <span>IN</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          New victory!: <strong>weekly team bugkiller</strong>
-                         <i class="fa fa-thumbs-o-up"></i>
-                        </span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
+        <div class="image">
+          <img src="images/Feed_QA-01.png">
         </div>
         <!-- /page content -->
 
@@ -574,13 +254,6 @@
       </div>
     </div>
 
-    <div id="custom_notifications" class="custom-notifications dsp_none">
-      <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
-      </ul>
-      <div class="clearfix"></div>
-      <div id="notif-group" class="tabbed_notifications"></div>
-    </div>
-
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -589,17 +262,27 @@
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- PNotify -->
-    <script src="../vendors/pnotify/dist/pnotify.js"></script>
-    <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
-    <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
-
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-	
   </body>
 </html>
